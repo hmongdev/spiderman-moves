@@ -1,0 +1,78 @@
+body {
+  font-family: 'ArcadeClassic', sans-serif;
+  height: 100vh;
+  margin: 1rem 3rem;
+  background: url(images/background.gif);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
+  -webkit-text-stroke: 0.1rem black;
+  -webkit-text-fill-color: #F7CA3B;
+  text-shadow: 5px 0px 0.1px #EB3725;
+}
+
+img#spiderman {
+  width: clamp(20vw, 50%, 25vw);
+  image-rendering: pixelated;
+  border: 1px solid yellow;
+}
+
+/* Width is 768px or LESS */
+@media screen and (max-width: 600px) {
+
+  .btn {
+    font-size: 1rem;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .button {
+    font-size: 1rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
+h1 {
+  font-size: clamp(7vw, 50%, 10vw);
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: 100vw;
+  border: 5px solid green;
+}
+
+#spiderman {
+  width: 15rem;
+}
+
+#punch {
+  background-color: red;
+  border: 0.5rem solid rgb(132, 0, 0);
+}
+
+#kick {
+  background-color: limegreen;
+  border: 0.5rem solid rgb(15, 132, 0);
+}
+
+#taunt {
+  background-color: rgb(197, 205, 50);
+  border: 0.5rem solid rgb(125, 132, 0);
+}
+
+#special {
+  background-color: rgb(0, 123, 255);
+  border: 0.5rem solid rgb(0, 64, 132);
+}
