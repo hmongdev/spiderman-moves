@@ -13,6 +13,9 @@
 
     <!-- Spider-Man Font -->
     <link href="http://fonts.cdnfonts.com/css/the-amazing-spider-man" rel="stylesheet">
+    <style>
+        @import url('http://fonts.cdnfonts.com/css/the-amazing-spider-man');
+    </style>
 
     <!-- Arcade Font -->
     <link href="http://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
@@ -22,22 +25,20 @@
 </head>
 
 <body>
-
-    <header id="title">
-        <h1 class="text-center m-3">ENTER THE SPIDEY-VERSE</h1>
+    <header class="header d-flex justify-content-center mt-3">
+        <h1 id="title" class="text-center">ENTER THE SPIDER-VERSE</h1>
     </header>
 
-    <div class="d-flex flex-column align-items-center">
-        <div class="buttons text-center">
-            <button id="punch" class="text-white m-1">punch</button>
-            <button id="kick" class="text-white m-1">kick</button>
-            <button id="taunt" class="text-white m-1">taunt</button>
-            <button id="special" class="text-white m-1">special</button>
-        </div>
-        <div class="main d-flex justify-content-center align-items-end">
-            <img id="spiderman" class="img=fluid" src="images/idle.gif" alt="idle">
-        </div>
-    </div>
+    <main class="main d-flex flex-row justify-content-center">
+        <button id="punch" class="button">Punch</button>
+        <button id="kick" class="button">Kick</button>
+        <button id="taunt" class="button">Taunt</button>
+        <button id="special" class="button">@</button>
+    </main>
+    <div class="text-center" id="spiderman"><img src="images/idle.gif" alt="idle-spiderman"></div>
+
+
+
 </body>
 
 </html>

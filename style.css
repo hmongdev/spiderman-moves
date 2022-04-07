@@ -1,7 +1,12 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'ArcadeClassic', sans-serif;
   height: 100vh;
-  margin: 1rem 3rem;
+  margin: 0 auto;
   background: url(images/background.gif);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -9,21 +14,28 @@ body {
   overflow: hidden;
 }
 
-h1 {
+h1#title {
+  width: 90vw;
   font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
   -webkit-text-stroke: 0.1rem black;
   -webkit-text-fill-color: #F7CA3B;
   text-shadow: 5px 0px 0.1px #EB3725;
+  border: 3px solid green;
 }
 
-img#spiderman {
-  width: clamp(20vw, 50%, 25vw);
-  image-rendering: pixelated;
-  border: 1px solid yellow;
+/* media queries */
+
+@media (orientation: portrait) and (max-width: 415px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
-/* Width is 768px or LESS */
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 416px) {
+  h1 {
+    font-size: 3rem;
+  }
 
   .btn {
     font-size: 1rem;
@@ -32,47 +44,54 @@ img#spiderman {
 }
 
 @media screen and (min-width: 600px) {
-
-  .button {
-    font-size: 1rem;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    display: inline-block;
+  h1 {
+    font-size: 6rem;
   }
 }
 
-h1 {
-  font-size: clamp(7vw, 50%, 10vw);
-  padding: 0;
-  margin: 0;
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 7rem;
+  }
 }
 
-.main {
-  width: 100vw;
-  border: 5px solid green;
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 9rem;
+  }
 }
 
-#spiderman {
-  width: 15rem;
+img {
+  border: 2px solid blue;
+}
+
+.button {
+  color: white;
+  font-size: 1rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 #punch {
   background-color: red;
-  border: 0.5rem solid rgb(132, 0, 0);
+  border: 0.3rem solid rgb(132, 0, 0);
 }
 
 #kick {
   background-color: limegreen;
-  border: 0.5rem solid rgb(15, 132, 0);
+  border: 0.3rem solid rgb(15, 132, 0);
 }
 
 #taunt {
   background-color: rgb(197, 205, 50);
-  border: 0.5rem solid rgb(125, 132, 0);
+  border: 0.3rem solid rgb(125, 132, 0);
 }
 
 #special {
+  font-size: 2.6rem;
+  font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
   background-color: rgb(0, 123, 255);
-  border: 0.5rem solid rgb(0, 64, 132);
+  border: 0.3rem solid rgb(0, 64, 132);
 }
