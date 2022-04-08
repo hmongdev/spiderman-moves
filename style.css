@@ -1,13 +1,8 @@
-/* @font-face {
-  font-family: "THE AMAZING SPIDER-MAN";
-  src: url("//db.onlinewebfonts.com/t/6bffb4a5e21eff023457e58d7c79975c.eot");
-  src: url("//db.onlinewebfonts.com/t/6bffb4a5e21eff023457e58d7c79975c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6bffb4a5e21eff023457e58d7c79975c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6bffb4a5e21eff023457e58d7c79975c.woff") format("woff"), url("//db.onlinewebfonts.com/t/6bffb4a5e21eff023457e58d7c79975c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6bffb4a5e21eff023457e58d7c79975c.svg#THE AMAZING SPIDER-MAN") format("svg");
-}
-
-@import url('//db.onlinewebfonts.com/c/6bffb4a5e21eff023457e58d7c79975c?family=THE+AMAZING+SPIDER-MAN'); */
-
+/* imported fonts */
 @import url('http://fonts.cdnfonts.com/css/the-amazing-spider-man');
+@import url('http://fonts.cdnfonts.com/css/arcade-classic');
 
+/* default styles */
 html {
   margin: 0;
   padding: 0;
@@ -35,7 +30,6 @@ h1#title {
 
 /* media queries */
 
-/* ideal breakpoints */
 /* Small (smaller than 640px)
 Medium (641px to 1007px)
 Large (1008px and larger) */
