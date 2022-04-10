@@ -24,7 +24,7 @@ h1 {
   -webkit-text-stroke: 0.1rem black;
   -webkit-text-fill-color: #F7CA3B;
   text-shadow: 5px 0px 0.1px #EB3725;
-  border: 3px solid green;
+  border: 5px solid green;
 }
 
 /* ----------- media queries ----------- */
@@ -51,18 +51,27 @@ h1 {
   }
 }
 
-.header {
+.title {
+  font-size: 3rem;
   margin: 0 auto;
 }
 
 .main {
-  border: 3px dashed yellow;
-  height: 80%;
+  border: 5px dashed yellow;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  width: 15rem;
+  image-rendering: pixelated;
+  border: 5px dotted blue;
 }
 
 .buttons {
   width: 80%;
-  border: 3px solid green;
+  border: 5px dotted green;
 }
 
 .button {
@@ -90,14 +99,13 @@ h1 {
 }
 
 #special {
-  font-size: 1rem;
+  font-size: 3rem;
+  line-height: 1.7;
   font-family: 'THE AMAZING SPIDER-MAN', sans-serif;
   background-color: rgb(0, 123, 255);
   border: 0.3rem solid rgb(0, 64, 132);
-}
 
-img {
-  width: 30%;
-  image-rendering: pixelated;
-  border: 2px solid blue;
+  /* balance the offset from font-size */
+  position: relative;
+  top: 1.07rem;
 }
