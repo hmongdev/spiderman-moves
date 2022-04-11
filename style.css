@@ -26,23 +26,6 @@ body {
   text-shadow: 5px 0px 0.1px #EB3725;
 }
 
-/* ----------- media queries ----------- */
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  footer {
-    height: 30%;
-  }
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
-
-  footer {
-    height: 30%;
-  }
-}
-
 .title {
   font-size: 3rem;
   margin: 0 auto;
